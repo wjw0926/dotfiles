@@ -1,0 +1,58 @@
+# Reference: https://github.com/yous/dotfiles
+
+# Mac OS
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+.ycm_extra_conf.py
+
+# JetBrains IDE
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Node.js
+node_modules/
+
+# Python
+*.pyc
+.python-version
+
+# Ruby
+.rvmrc
+.ruby-version
+.ruby-gemset
+
+# EditorConfig
+.editorconfig
+
+# Tags
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
+gtags.files
+GTAGS
+GRTAGS
+GPATH
+GSYMS
+cscope.files
+cscope.out
+cscope.in.out
+cscope.po.out
