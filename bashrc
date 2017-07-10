@@ -68,9 +68,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Some more basic aliases
-alias ll='ls -lh'
-alias la='ls -lAh'
 alias l='ls -lah'
+alias ll='ls -lah'
 alias cd..='cd ..'
 alias clr=clear
 alias vi='vim'
