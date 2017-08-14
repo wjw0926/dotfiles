@@ -1,16 +1,18 @@
 [core]
-	excludesfile = ~/.gitignore_global
-	editor = vim
-	autocrlf = input
-	autowhitespace = trailing-space,space-before-tab,cr-at-eol
+    excludesfile = ~/.gitignore_global
+    editor = vim
+    autocrlf = input
+    autowhitespace = trailing-space,space-before-tab,cr-at-eol
 [color]
-	ui = auto
+    ui = auto
 [include]
-	path = ~/.gitconfig.local
+    path = ~/.gitconfig.local
 [alias]
-	lg = log --all --oneline --decorate --graph
-	s = status
-	a = add
-	c = commit
-	d = diff
-	co = checkout
+    lg = log --all --oneline --decorate --graph
+    s = status
+    a = add
+    b = branch
+    c = commit
+    d = diff
+    co = checkout
+    st = stash

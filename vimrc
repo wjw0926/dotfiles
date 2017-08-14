@@ -5,11 +5,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'valloric/youcompleteme'
-Plugin 'raimondi/delimitmate'
+Plugin 'dietsche/vim-lastplace'
+Plugin 'nathanaelkane/vim-indent-guides'
+
+Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
 
@@ -52,7 +54,13 @@ set mouse=a
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 colorscheme solarized
 
 " vim-gitgutter
 set updatetime=250
+
+" vim-indent-guides
+let g:indent_guides_start_level=1
+let g:indent_guides_guide_size=1
+let g:indetn_guides_color_change_percent=1
