@@ -5,13 +5,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'dietsche/vim-lastplace'
 Plugin 'nathanaelkane/vim-indent-guides'
-
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
 
