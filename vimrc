@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'dietsche/vim-lastplace'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -46,13 +45,6 @@ set showmatch
 set hlsearch
 set ruler
 set mouse=a
-
-" vim-colors-solarized
-syntax enable
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-colorscheme solarized
 
 " vim-gitgutter
 set updatetime=250

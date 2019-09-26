@@ -1,11 +1,47 @@
 #!/bin/bash
 
+#sudo apt-get install vim
+#yum install vim
+
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-cp -i -v bashrc ~/.bashrc
-cp -i -v vimrc ~/.vimrc
-cp -i -v profile ~/.profile
-cp -i -v gitconfig ~/.gitconfig
-cp -i -v gitignore_global ~/.gitignore_global
+if [ -f "~/.bashrc" ]; then
+    mv -i -v ~/.bashrc ~/.bashrc.orig
+    cp -i -v bashrc ~/.bashrc
+    source ~/.bashrc
+else
+    cp -i -v bashrc ~/.bashrc
+    source ~/.bashrc
+fi
+
+if [ -f "~/.vimrc" ];
+then
+    mv -i -v ~/.vimrc ~/.vimrc.orig
+    cp -i -v vimrc ~/.vimrc
+    source ~/.vimrc
+else
+    cp -i -v vimrc ~/.vimrc
+    source ~/.vimrc
+fi
+
+if [ -f "~/.profile" ]; then
+    mv -i -v ~/.profile ~/.profile.orig
+    cp -i -v profile ~/.profile
+fi
+
+if [ -f "~/.gitconfig" ];
+then
+    mv -i -v ~/.gitconfig ~/.gitconfig.orig
+    cp -i -v gitconfig ~/.gitconfig
+else
+    cp -i -v gitconfig ~/.gitconfig
+fi
+
+if [ -f "~/.gitignore_global" ]; then
+    mv -i -v ~/.gitignore_global ~/.gitignore_global.orig
+    cp -i -v gitignore_global ~/.gitignore_global
+else
+    cp -i -v gitignore_global ~/.gitignore_global
+fi
 
 vim +PluginInstall +qall
