@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#sudo apt-get install vim
-#yum install vim
+sudo apt-get install vim
+yum install vim
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-if [ -f "~/.bashrc" ]; then
+if [ -f "$HOME/.bashrc" ]; then
     mv -i -v ~/.bashrc ~/.bashrc.orig
     cp -i -v bashrc ~/.bashrc
     source ~/.bashrc
@@ -14,7 +14,7 @@ else
     source ~/.bashrc
 fi
 
-if [ -f "~/.vimrc" ];
+if [ -f "$HOME/.vimrc" ];
 then
     mv -i -v ~/.vimrc ~/.vimrc.orig
     cp -i -v vimrc ~/.vimrc
@@ -24,12 +24,12 @@ else
     source ~/.vimrc
 fi
 
-if [ -f "~/.profile" ]; then
+if [ -f "$HOME/.profile" ]; then
     mv -i -v ~/.profile ~/.profile.orig
     cp -i -v profile ~/.profile
 fi
 
-if [ -f "~/.gitconfig" ];
+if [ -f "$HOME/.gitconfig" ];
 then
     mv -i -v ~/.gitconfig ~/.gitconfig.orig
     cp -i -v gitconfig ~/.gitconfig
@@ -37,7 +37,7 @@ else
     cp -i -v gitconfig ~/.gitconfig
 fi
 
-if [ -f "~/.gitignore_global" ]; then
+if [ -f "$HOME/.gitignore_global" ]; then
     mv -i -v ~/.gitignore_global ~/.gitignore_global.orig
     cp -i -v gitignore_global ~/.gitignore_global
 else
